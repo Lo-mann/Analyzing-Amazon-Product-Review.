@@ -22,6 +22,8 @@ As a beginner in data analysis, this project marks the completion of my training
 I was given a dataset containing various information about products sold on Amazon, including their names, categories, prices, ratings, and customer reviews. My task was to explore the dataset, clean and organize it using Excel, analyze patterns using pivot tables and formulas, and finally present my findings with a dashboard.
 This project has helped me gain practical experience in working with raw data, drawing conclusions from patterns, and creating visual insights that support business decisions. It also reflects my understanding of the foundational tools used by data analysts.
 
+---
+
 ## Project Objectives
 The main objective of this project was to carry out an Exploratory Data Analysis (EDA) on a dataset from Amazon using Microsoft Excel and Power BI. As someone new to data analysis, this project gave me the opportunity to practice using Pivot Tables, calculated fields, and charts to solve real business problems.
 
@@ -42,7 +44,11 @@ The specific business questions I was expected to answer include:
 14. Identify the top 5 products in terms of rating and number of reviews combined.
 Completing this project has helped me to understand how data is used to answer real business questions and how Excel can be used as a powerful analysis tool.
 
-🔸 Q1. What is the average discount percentage by product category?
+---
+
+## Analysis
+
+🔸 **Q1. What is the average discount percentage by product category?**
 Tool Used: Pivot Table
 Steps:
 Insert Pivot Table
@@ -50,40 +56,40 @@ Rows: Category
 Values: Average of Discount %
 Insight: Categories like "Fashion" and "Electronics" had higher average discounts, indicating they may be more competitive or frequently promoted.
 
-🔸 Q2. How many products are listed under each category?
+🔸 **Q2. How many products are listed under each category?**
 Tool Used: Pivot Table
 Steps:
 Rows: Category
 Values: Count of Product Name
 Insight: The “Books” category had the most product listings, showing a wide variety in that segment.
 
-🔸 Q3. What is the total number of reviews per category?
+🔸 **Q3. What is the total number of reviews per category?**
 Tool Used: Pivot Table
 Steps:
 Rows: Category
 Values: Sum of Review Count
 Insight: “Electronics” had the highest review count, suggesting higher customer engagement.
 
-🔸 Q4. Which products have the highest average ratings?
+🔸 **Q4. Which products have the highest average ratings?**
 Tool Used: Sort in Excel
 Steps:
 Sort the Rating column from Largest to Smallest
 Insight: The top-rated products all had a 5.0 average, but with few reviews. High rating + high review count is more reliable.
 
-🔸 Q5. What is the average actual price vs the discounted price by category?
+🔸 **Q5. What is the average actual price vs the discounted price by category?**
 Tool Used: Pivot Table
 Steps:
 Rows: Category
 Values: Average of Actual Price and Average of Discounted Price
 Insight: “Home Appliances” had the highest original price but offered significant discounts.
 
-🔸 Q6. Which products have the highest number of reviews?
+🔸 **Q6. Which products have the highest number of reviews?**
 Tool Used: Sort in Excel
 Steps:
 Sort the Review Count column from Largest to Smallest
 Insight: The top-reviewed products were mostly in “Electronics” and “Home & Kitchen.”
 
-🔸 Q7. How many products have a discount of 50% or more?
+🔸 **Q7. How many products have a discount of 50% or more?**
 Tool Used: New Column + Pivot Table
 Steps:
 1. Add a column:
@@ -93,14 +99,14 @@ Rows: Discount ≥ 50%
 Values: Count of Product Name
 Insight: Over 400 products had a 50% or more discount — major promotions.
 
-🔸 Q8. What is the distribution of product ratings (e.g., how many products are rated 3.0, 4.0, etc.)?
+🔸 **Q8. What is the distribution of product ratings (e.g., how many products are rated 3.0, 4.0, etc.)?**
 Tool Used: Pivot Table
 Steps:
 Rows: Rating
 Values: Count of Product Name
 Insight: Most products were rated between 4.0 and 4.5 — generally positive feedback.
 
-🔸 Q9. What is the total potential revenue (Actual Price × Rating Count) by category?
+🔸 **Q9. What is the total potential revenue (Actual Price × Rating Count) by category?**
 Tool Used: Calculated Column + Pivot Table
 Steps:
 1. Add a column:
@@ -110,33 +116,33 @@ Rows: Category
 Values: Sum of Revenue
 Insight: “Electronics” had the highest potential revenue.
 
-🔸 Q10. What is the number of unique products per price range bucket (e.g., <₹200, ₹200–₹500, >₹500)?
+🔸 **Q10. What is the number of unique products per price range bucket (e.g., <₹200, ₹200–₹500, >₹500)?**
 Tool Used: Helper Column + Pivot Table
 Steps:
 1. Create a bucket column:
 =IF([Actual Price]<200, "<₹200", IF([Actual Price]<=500, "₹200–₹500", ">₹500"))
 
-🔸 Q11. How does the rating relate to the level of discount?
+🔸 **Q11. How does the rating relate to the level of discount?**
 Tool Used: Scatter Chart
 Steps:
 X-axis: Discount %
 Y-axis: Rating
 Insight: No strong direct relationship — products with high discounts don't always have high or low ratings.
 
-🔸 Q12. How many products have fewer than 1,000 reviews?
+🔸 **Q12. How many products have fewer than 1,000 reviews?**
 Tool Used: COUNTIF
 Formula:
 =COUNTIF([Review Count], "<1000")
 Insight: A majority of products had under 1,000 reviews, showing they may be new or niche.
 
-🔸 Q13. Which categories have products with the highest discounts?
+🔸 **Q13. Which categories have products with the highest discounts?**
 Tool Used: Pivot Table
 Steps:
 Rows: Category
 Values: Max of Discount %
 Insight: Categories like "Fashion" and "Beauty" had products with the steepest discounts (up to 80–90%).
 
-🔸 Q14. Identify the top 5 products in terms of rating and number of reviews combined.
+🔸 **Q14. Identify the top 5 products in terms of rating and number of reviews combined.**
 Tool Used: New Column + Sort
 Steps:
 1. Add a column for "combined score":
@@ -144,8 +150,11 @@ Steps:
 2. Sort this column from largest to smallest.
 Insight: Products with high ratings and high review counts were top performers, mostly in “Electronics” and “Home Essentials.”
 
-In conclusion I'm grateful for this oppurtunity to be part of this training and this project helped me apply what I’ve learned in Excel and Power BI to real data. I now feel more confident analyzing datasets, answering business questions, and presenting insights visually. I look forward to improving my SQL skills and continuing my data analysis journey.
+---
 
+## Recommendations
+- the 200-500 price range should be focused onfor best-performing product pricing
+- Products with high combined score should have their visibility boosted
 
 
 
