@@ -156,6 +156,12 @@ Insight: Products with high ratings and high review counts were top performers, 
 - the 200-500 price range should be focused onfor best-performing product pricing
 - Products with high combined score should have their visibility boosted
 
+---
+
+## Author
+Longmiel Manyil Bitrus
+
+manyillongmiel@gmail.com
 
 
 
